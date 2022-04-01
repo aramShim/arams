@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+// 웹폰트
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+// 변수, 믹스인
+@import "scss/helpers/_variables";
+@import "scss/helpers/_mixins";
+@import "scss/helpers/_mediaQueries";
+@import "scss/helpers/_animations";
+
+// 기본 스타일
+@import "scss/base/_reset";
+@import "scss/base/_common";
+@import "scss/base/_font";
+
+// 컴포넌트(모듈)
+@import "scss/components/_title";
+@import "scss/components/_fixed";
+@import "scss/components/_gnb";
+
+// 레이아웃
+@import "scss/layout/_header";
+@import "scss/layout/_footer";
+@import "scss/layout/_content";
+// @import "scss/layout/_article_hello";
+// @import "scss/layout/_article_work";
+// @import "scss/layout/_hero";
+// @import "scss/layout/_article_detail";
+
+
+//벤더
+@import "scss/vendors/_swiper";
+@import "scss/vendors/_swiperOverride";
+
+//테마
+@import "scss/themes/_dark";
+

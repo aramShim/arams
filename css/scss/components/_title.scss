@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.txt-en {
+    @include font-lato;
+    
+}
+.sec-title {
+    h2 {
+        font-size: 42px;
+        color: $color-sub;
+    }
+    .sec-subtitle {
+        @include highlight($color:rgba(244,200,81,.5));
+        display: inline-block;
+    }
+}

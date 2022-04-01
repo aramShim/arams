@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <title>arams | 웹 퍼블리셔 포트폴리오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--css-->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+	<!--javascript-->
+	<script type="text/javascript" src="js/base/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/base/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/vendors/fontawesome.js"></script>
+	<script type="text/javascript" src="js/vendors/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/vendors/swiper.min.js"></script>
+	<script type="text/javascript" src="js/arams_ui.js"></script>
+	
+</head>
+
+<body>
+	<div class="a-wrap">
+		<div class="a-loader" style="display: none;"></div>
+
+		<div class="header-holder">
+			<div class="header-wrap">
+				<header id="header">
+					<div class="toggle-holder">
+						<div id="js-toggle" class="menu">
+							<div class="menu-line"></div>
+						</div>
+					</div>
+					<!--//toggle-holder-->
+					<!-- <div class="top-pagination">
+						<div class="current-num"><span>01</span></div>
+						<div class="pagination-bar"></div>
+						<div class="total-pages-num">04</div>
+					</div> -->
+					<!--//top-pagination-->
+					<div class="my-info-wrap">
+						<dl>
+							<dt class="common-upper txt-en">name</dt>
+							<dd class="">심아람(Aram Shim)</dt>
+						</dl>
+						<dl>
+							<dt class="common-upper txt-en">role</dt>
+							<dd class="">퍼블리셔(Publisher)</dt>
+						</dl>
+						<dl>
+							<dt class="common-upper txt-en">email</dt>
+							<dd class="">arams@arams.com</dt>
+						</dl>
+						<ul class="setting-btn-wrap">
+							<li class="setting-item">
+								<a href=""><i class="fas fa-moon"></i></a>
+							</li>
+							<li class="setting-item">
+								<a href="javascript:;" class="play"><i class="fas fa-play"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!--//my-info-wrap-->
+					<div class="menu-holder" id="gnb">
+						<ul class="gnb">
+							<li><a href="#home" class="js-link txt-en">Home</a></li>
+							<li><a href="#introduce" class="js-link txt-en">Introduce</a></li>
+							<li><a href="#works" class="js-link txt-en">Works</a></li>
+							<li><a href="#contact" class="js-link txt-en">Contact</a></li>
+						</ul>
+					</div>
+					<!--//menu-holder-->
+					<div class="big-pagination">
+						<div class="current-big-num txt-number">01</div>
+						<div class="icon-top">
+							<a href="#" class="js-top"><i class="fas fa-long-arrow-alt-up"></i></a>
+						</div>
+					</div>
+					<!--//big-pagination-->
+				</header>
+			</div>
+		</div>
+		<!--//header-holder-->
+
+		<div id="content">
+			<section id="home" data-page="1" class="scroll-animation pageNum main">
+				<div class="ly-inner">
+					<div class="ly-flex">
+						<ul class="home-btn">
+							<li><a href="#works" class="js-link txt-en">Check My Works</a></li>
+							<li><a href="#contact" class="js-link txt-en">Contact Me</a></li>
+						</ul>
+						<div class="self-picture">
+							<picture>
+								<source srcset="img/arami.avif" type="image/avif">
+								<source srcset="img/arami.avif" type="image/avif" media="(max-width:960px)">
+								<source srcset="img/arami.webp" type="image/webp">
+								<source srcset="img/arami.webp" type="image/webp" media="(max-width:960px)">
+								<img    src="img/arami.jpg" alt="">
+							</picture>
+							<button type="button" class="blow"><i class="fas fa-tint"></i></button>
+						</div>						
+						<ul class="hello-text">
+							<li>
+								<span class="ko">안녕하세요.</span>
+								<span class="txt-en">Hello.</span>
+							</li>
+							<li>
+								<span class="ko">저는<br>아람입니다 :)</span>
+								<span class="txt-en">I'm aram :)</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--//home-->
+			<section id="introduce" data-page="2" class="scroll-animation pageNum">
+				<div class="ly-inner">
+					<div class="sec-title"><h2>Introduce</h2></div>
+					<div class="sec-content">
+						<p>안녕하세요, <br>3년차 웹퍼블리셔  <strong>심아람</strong>입니다 :) </p>
+						<p>
+							웹접근성을 고려한 탄탄한 코드 위에 사용자를 고려한 UI 그려내기를 좋아합니다. <br>
+							CSS와 Javascript를 활용한 동적 모션을 구현하는 것을 좋아하고, 유지보수에 최적화된 마크업에 관심이 많습니다. <br>
+							사용자 입장에서 생각하고, 고민하면서 더 나은 방향을 제시하기 위해 많은 사람들과 얘기 나누며 해결하는 것을 좋아합니다.<br>
+							편리하고 가시성 좋은 프로덕트를 사용자들의 기억에 남을 수 있도록 노력합니다. <br>
+							항상 배우려고 노력하며, 새로운 것을 배우는 것을 좋아합니다.					
+						</p>
+						<p>
+							저는 제 일을 좋아합니다. <br>
+							좋아하니까 더 잘하고싶어지고 더 잘 할수있는 방향에 대해 고민합니다. <br>
+							그러다보면 거기에 저만의 특별한 무언가가 담기게 되더라구요. <br>
+							더 잘하려는 의지, 끊임없이 배우려는 열정, 그리고 제 일에 대한 애정. <br>
+							모두 제가 가진 저만의 ‘다움’입니다.
+						</p>						
+						<p>
+							좋아하는 일을 잘하면서 즐기는것. 이것이 제가 성장하는 목표이며 꿈입니다. 
+						</p>
+						<p>#like #의지 #열정 #애정</p>
+					</div>
+				</div>
+			</section>
+			<!--//introduce-->
+			<section id="works" data-page="3" class="scroll-animation pageNum">
+				<div class="ly-inner">
+					<div class="sec-title">
+						<h2>Works</h2>
+						<p class="sec-subtitle">사랑과 정성을 담아 열심히 만들었습니다 :)</p>
+					</div>
+					<div class="sec-content swiper-container">
+						<ul class="work-list swiper-wrapper">
+							<!--work-item-->
+							<li class="work-item swiper-slide">
+								<a href="" class="work-item-link">
+									<picture>
+										<!-- <source srcset="img/.avif" type="image/avif">
+										<source srcset="img/.avif" type="image/avif" media="(max-width:960px)">
+										<source srcset="img/.webp" type="image/webp">
+										<source srcset="img/.webp" type="image/webp" media="(max-width:960px)">
+										<img src="img/.jpg" alt="풀무원녹즙"> -->
+									</picture>									
+									<div class="work-text-holder">
+										<div class="work-text-wrap">
+											<p class="work-text">CLIENT : 풀무원녹즙</p>
+											<p class="work-text">RELESE DATE : 22. 01</p>
+											<p class="work-text">TYPE : 적응형웹&모바일</p>
+										</div>
+									</div>
+								</a>								
+							</li>
+							<!--//work-item-->
+						</ul>
+					</div>
+					<div class="sec-title">
+						<p class="sec-subtitle">개인 작업물도 확인해보세요~</p>
+					</div>
+					<div class="sec-content">
+						<div class="ly-flex">
+							<picture>
+								<source srcset="" type="image/avif">
+								<source srcset="" type="image/avif" media="(max-width:960px)">
+								<source srcset="" type="image/webp">
+								<source srcset="" type="image/webp" media="(max-width:960px)">
+								<img    src="" alt="모바일 화면">
+							</picture>
+							<div class="indi-work-info">
+								<div class="indi-title">
+									<p class="txt-en">TYPE</p>
+									<p class="indi-subtitle">반응형 웹, 쇼핑몰, 게시판</p>
+								</div>
+								<div class="indi-info">
+									<p>설명</p>
+								</div>
+								<div class="indi-btn">
+									<button type="button" class="btn btn-outline">작업과정 보기</button>
+									<a href="" class="btn">결과물 바로가기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" data-page="4" class="scroll-animation pageNum">
+				<div class="ly-inner">
+					<div class="sec-title">
+						<h2>Contact</h2>
+						<p class="sec-subtitle">이럴 때 제가 잘 어울릴거같아요!</p>
+					</div>
+					<div class="sec-content">
+						<ul class="contact-me">
+							<li><i class="fas fa-user-check"></i>역량과 경력이 갖춰진 웹 퍼블리셔가 필요할때</li>
+							<li><i class="fas fa-user-check"></i>성장하지만 겸손을 잃지 않는 사람이 필요할때</li>
+							<li><i class="fas fa-user-check"></i>책임감있고 시너지 줄 수 있는 팀원이 필요할때</li>
+							<li><i class="fas fa-user-check"></i>자신의 일을 좋아하며 즐기는 사람이 필요할때</li>
+						</ul>
+						<a href="" class="resume">이력서 보기</a>
+						<div class="myemail">
+							<a href="" class="txt-en">arams@arams.com</a>
+							<p class="myemail-sub">당신의 연락을 기다리고 있어요. 언제든지 연락주세요 :)</p>
+						</div>						
+					</div>
+				</div>
+			</section>
+			<!--//contact-->
+		</div>
+		<!--//content-->
+		<footer>
+			<div class="footer-wrap">
+				<div class="ly-inner">
+					<ul class="ft-sns">
+						<li><a href="" class="txt-en">GitHub</a></li>
+						<li><a href="" class="txt-en">Blog</a></li>
+					</ul>
+					<div class="ft-copy txt-en">© <span class="js-year">2022</span> Arams</div>
+					<div class="ft-made"><span class="txt-en">Made by Arams :)</span></div>
+				</div>
+			</div>
+		</footer>
+		<!--footer-->
+	</div>
+	<!--//a-wrap-->
+	<audio id="bgm" src="media/bgm.mp3" preload="auto"></audio>
+</body>
+</html>
+<script>
+	 var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+	// bubbles
+    const blowBtn = document.querySelector(".blow");
+    const container = document.querySelector(".self-picture");
+
+    // button.onclick = emptyContainer;
+
+    blowBtn.onclick = makeBubble;
+
+    function emptyContainer(){
+        container.innerHTML = "";
+    }
+
+
+    function makeBubble(e){
+        let newBubble = document.createElement("div");
+        let X = e.clientX;
+        let Y = e.clientY;
+        newBubble.classList.add("bubble");
+        container.appendChild(newBubble);
+        newBubble.style.left = (X - 575) + "px";
+        newBubble.style.top = (Y - 85) + "px";
+        newBubble.style.transform = `scale(${Math.random()})`;
+    }
+	// music
+	// function playSound(action) {
+	// 	document.getElementById(action).play();
+	// };
+</script>

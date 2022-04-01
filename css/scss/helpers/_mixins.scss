@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/** Mixins **/
+
+@mixin txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin font-noto {
+    font-family: 'Noto sans KR', AppleGothic, sans-serif, Helvetica;
+}
+@mixin font-lato($weight:900) {
+    font-family: 'Lato', AppleGothic, sans-serif, Helvetica;
+    font-weight: $weight;
+}
+
+// flex-box
+@mixin display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin display-inline-flex {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+// circle
+@mixin circle($size,$bg-color,$bg-hover-color:$bg-color){
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background-color: $bg-color;
+
+    &:hover {
+        background-color: $bg-hover-color;
+    }
+}
+
+@mixin highlight($size:-8px, $color: $color-sub) {
+    box-shadow: inset 0 $size 0 $color;
+}
+
+@mixin position-absolute($t: null,$b: null,$l: null,$r: null){
+    position: absolute;
+    top:$t;
+    bottom: $b;
+    left: $l;
+    right: $r;
+}

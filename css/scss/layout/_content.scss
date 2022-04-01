@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* content */
+#content {
+    section {
+        margin-left: $holderSize;
+        height: 100vh;
+        padding: 60px 0;
+
+        .ly-inner {
+            position: relative;
+            max-width: $layoutInner;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .ly-flex {
+            height: inherit;
+        }
+
+        .sec-content {
+            padding: 60px 0;
+        }
+    }
+}
+@include tablet {
+    #content {
+        margin-top: 5rem;
+        section {
+            margin-left: 0;
+            height: 100vh;
+            padding: 60px 0;
+        }
+    }     
+}
+@include mo-lg {
+    #content {
+        margin-top: 5rem;
+        section {
+            margin-left: 0;
+            height: 100vh;
+            padding: 60px 0;
+        }
+    }     
+}
+// #home
+#home {
+    .home-btn {
+        @include position-absolute($t:30px, $l:35px);
+        z-index: 1;
+        text-align: right;
+        li {
+            margin-bottom: 10px;
+
+            a {
+                background-color: $color-sub;
+                color: #fff;
+                display: inline-block;
+                text-align: center;
+                padding: 18px 36px;
+                border-radius: 30px;
+                font-weight: 600;
+            }
+        }        
+    }
+    .self-picture {
+        position: relative;
+        text-align: center;        
+        height: 100%;
+
+        picture {         
+            @include position-absolute($t: 0px, $l: 50%);
+            transform: translateX(-50%);
+            height: 100%;
+
+            &::before {
+                content:'';
+                @include position-absolute($t: 5px, $l: 5px);
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                border: 2px solid $color-sub;
+                z-index: 9;          
+            }            
+            
+            img {
+                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;                
+            }
+        }
+        .blow {
+            position: absolute;
+            bottom: -5%;
+            left: 46%;
+            border: 1px solid $color-sub;
+            background-color: $color-sub;
+            font-size: 2em;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            box-shadow: 2px 3px 3px rgba(0,0,0,.2);
+            color:#fff;
+            z-index:2;
+        }
+        
+    }
+    
+    .hello-text {
+        @include position-absolute($b:30px, $r:0);
+        font-size: 60px;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: bold;
+        li {
+            position: relative;
+            .txt-en {
+                opacity: 0;
+                color: $color-sub;
+                @include position-absolute($t:50%, $l:0);
+                // transform: translateY(-50%);
+            }
+        }
+        
+    }
+}
+// end of #home
+
+// #introduce
+#introduce {
+    .sec-content {
+        p {
+            padding: 1rem 0;
+        }
+    }
+}
+// end of #introduce
+
+// #contact
+#contact {
+    .contact-me {
+        @include display-flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 50%;
+            padding: 1rem 0;
+            font-size: 1.1em;
+
+            i {
+                color: $color-sub;
+                margin-right: 10px;
+            }
+        }
+    }
+    .resume {
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid #252525;
+        border-radius: 10px;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        transition: .3s linear;
+
+        &:hover {
+            background-color: $color-sub;
+            color: #fff;
+            border-color: $color-sub;
+        }
+    }
+    .myemail {
+        background-color: $color-wrap-hover;
+        margin-top: 6rem;
+        text-align: center;
+        padding: 2rem 0;
+        border-radius: 10px;
+
+        .txt-en {
+            font-size: 2.2em;
+            padding-bottom: 1rem;
+            display: block;
+        }
+
+    }
+    
+    
+}
+// end of #contact
